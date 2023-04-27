@@ -36,6 +36,6 @@ function renderFunctions(){
 
 function renderSolution(){
   alert(`
-    """solution will go here"""
+    ***Solutions coming soon!***
   `)
 }
