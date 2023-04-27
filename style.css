@@ -10,12 +10,13 @@ body {
   padding: 0;
   min-height: 100vh;
   position: relative;
+  padding-bottom: 40px;
 }
 
 header {
   background-color: #066466;
   margin: 0;
-  height: 100px;
+  height: 150px;
   text-align: center;
   width: 100%;
 }
@@ -26,23 +27,42 @@ h1 {
   color: #FEFAE0;
 }
 
+nav {
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  width: 100px;
+}
+
+nav button {
+  padding: 0px;
+  height: 50px;
+  width: 150px;
+  margin: 10px 20px 10px 20px;
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
 main {
   width: 80vw;
   margin: auto;
 }
 
-#expressions-section {
+#expressions-section, #functions-section {
   /* background-color: pink; */
   width: 90%;
   margin: auto;
-  height: 600px;
+  height:auto;
+  padding-bottom: 100px;
 }
 
-#expressions-section h2 {
+#expressions-section h2, #functions-section h2 {
   text-align: center;
 }
 
-#expressions-section ol {
+#expressions-section ol, #functions-section ol {
   margin: auto;
   max-width: 70%;
   /* background-color: white; */
@@ -61,6 +81,11 @@ main {
   height: 30px;
 }
 
+#functions-section li {
+  border: 2px solid black;
+  margin: 40px;
+}
+
 .buttons {
   margin-left: 20px;
   position: absolute;
@@ -74,6 +99,17 @@ main {
   margin-left: 20px;
 }
 
+
+.expressions {
+  padding: 10px;
+}
+
+.functions {
+  padding: 10px;
+  background-color: white;
+}
+
+
 footer {
   height: 70px;
   background-color: #066466;
@@ -86,8 +122,4 @@ footer {
 footer p {
   margin: 10px;
   color: #FEFAE0;
-}
-
-.expressions {
-  padding: 10px;
 }
