@@ -10,7 +10,7 @@ let expressions = [
   'true && false || true',
   '!(10 < 5) || (8 > 6 && 4 <= 4)',
   '(3 < 5 && 4 > 2) || (1 == 1 && false)'
-]
+];
 
 // array of correct evaluations
 let answers = [
@@ -22,7 +22,7 @@ let answers = [
   'true',
   'true',
   'true'
-]
+];
 
 let explanations = [
   'This expression will evaluate to true because both conditions are true.',
@@ -33,7 +33,7 @@ let explanations = [
   'This expression will evaluate to true because the first two conditions (true && false) evaluate to false, but the third condition (true) is true.',
   'This expression will evaluate to true because the first condition (!(10 < 5)) is true (negated by the ! operator), and the second condition (8 > 6 && 4 <= 4) is also true.',
   'This expression will evaluate to true because the first condition (3 < 5 && 4 > 2) is true, and the second condition (1 == 1 && false) is false, but the || operator evaluates to true if at least one condition is true.'
-]
+];
 
 function renderExpressions(){
   for (let i = 0; i < expressions.length; i++){
@@ -41,13 +41,13 @@ function renderExpressions(){
       <li class='expressions'>
         ${expressions[i]} 
         <section class='buttons'>
-          <button id='${i}' onClick=solveIt(${i})>Solve me!</button>
+          <button id='e${i}' onClick=solveIt(${i})>Solve me!</button>
           <button onClick=renderExplanation(${i})>See Answer</button>
         </section>
       </li>`
     );
   }
-}
+};
 
 function solveIt(index){
   let userAnswer = prompt(`True or False: ${expressions[index]}`);
@@ -59,9 +59,9 @@ function solveIt(index){
       solveIt(index);
     };
   }
-}
+};
 
 function renderExplanation(index){
   alert(`${expressions[index]} : ${explanations[index]}`);
-}
+};
 
