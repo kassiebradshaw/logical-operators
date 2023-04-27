@@ -51,7 +51,7 @@ function renderExpressions(){
 
 function solveIt(index){
   let userAnswer = prompt(`True or False: ${expressions[index]}`);
-  if (userAnswer == answers[index]){
+  if (userAnswer.toLowerCase() == answers[index]){
     alert(`You are correct! It is ${answers[index]}`);
     renderExplanation(index);
   } else {
